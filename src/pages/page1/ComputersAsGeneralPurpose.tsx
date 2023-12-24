@@ -21,7 +21,7 @@ const Page1 = () => {
   useDocumentMetadata('ComputersAsGeneralPurpose', "This is the first page");
   const { setFooterData } = useFooter();
 
-  const { data, loading, error } = useFetchData("http://localhost:3000/api/data/page1");
+  const { data, loading, error } = useFetchData("https://cpuvsim.herokuapp.com/api/data/page1");
 
   useEffect(() => {
     if (data) {

@@ -12,7 +12,7 @@ const Page3 = () => {
   useDocumentMetadata('Von Neumann Model', "This is the third page");
   const { setFooterData } = useFooter();
 
-  const { data, loading, error } = useFetchData("http://localhost:3000/api/data/page3");
+  const { data, loading, error } = useFetchData("https://cpuvsim.herokuapp.com/api/data/page3");
 
   useEffect(() => {
     if (data) {

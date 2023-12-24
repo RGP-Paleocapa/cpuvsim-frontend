@@ -12,7 +12,7 @@ const Page6 = () => {
   useDocumentMetadata('Assembly and High Level Languages', "This is the sixth page");
   const { setFooterData } = useFooter();
 
-  const { data, loading, error } = useFetchData('http://localhost:3000/api/data/page6');
+  const { data, loading, error } = useFetchData('https://cpuvsim.herokuapp.com/api/data/page6');
 
   useEffect(() => {
     if (data) {

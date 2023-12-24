@@ -14,8 +14,7 @@ const Page2 = () => {
     useDocumentMetadata('Simple Binary Calculations', "This is the second page");
     const { setFooterData } = useFooter();
 
-    const pageId = 'page2'; // Example page ID
-    const { data, loading, error } = useFetchData(`http://localhost:3000/api/data/${pageId}`);
+    const { data, loading, error } = useFetchData(`https://cpuvsim.herokuapp.com/api/data/page2`);
 
     useEffect(() => {
     if (data) {

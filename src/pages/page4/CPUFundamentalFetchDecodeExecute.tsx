@@ -12,7 +12,7 @@ const Page4 = () => {
     useDocumentMetadata('CPU Fundamentals Fetch Decode Execute', "This is the fourth page");
     const { setFooterData } = useFooter();
 
-    const { data, loading, error } = useFetchData("http://localhost:3000/api/data/page4");
+    const { data, loading, error } = useFetchData("https://cpuvsim.herokuapp.com/api/data/page4");
 
     useEffect(() => {
         if (data) {

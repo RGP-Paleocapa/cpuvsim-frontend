@@ -12,7 +12,7 @@ const Page7 = () => {
     useDocumentMetadata('Translation of High Level Language', "This is the seventh page");
     const { setFooterData } = useFooter();
 
-    const { data, loading, error } = useFetchData('http://localhost:3000/api/data/page7');
+    const { data, loading, error } = useFetchData('https://cpuvsim.herokuapp.com/api/data/page7');
 
     useEffect(() => {
         if (data) {
