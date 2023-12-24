@@ -19,7 +19,7 @@ export default defineConfig({
     },  
   },
   plugins: [react()],
-  base: "/cpuvsim/",
+  base: "/cpuvsim-frontend/",
   server: {
     open: true,
     // proxy: {
